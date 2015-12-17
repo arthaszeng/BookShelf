@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Stack;
 
 @Repository
 public class BookRepository {
@@ -17,6 +18,7 @@ public class BookRepository {
                     put("9780131429017", new Book("9780131429017", "The Art of UNIX Programming", "Eric S. Raymond", 39.99));
                 }
             };
+    public static Stack<Book> BOOK_STACK = new Stack<>();
 
     public Iterable<Book> findAll() {
         return BOOKS_MAP.values();
@@ -26,4 +28,20 @@ public class BookRepository {
         return BOOKS_MAP.get(isbn);
     }
 
+    public void saveBook(Book book) {
+        BOOKS_MAP.put(book.getIsbn(), book);
+    }
+
+    public void delete(Book book) {
+        BOOKS_MAP.remove(book.getIsbn());
+        BOOK_STACK.add(book);
+    }
+
+    public void undo() {
+        if(!BOOK_STACK.isEmpty()){
+            Book buf = (Book) BOOK_STACK.pop();
+            System.out.println(buf.getName() + buf.getIsbn() + buf.getAuthor());
+            BOOKS_MAP.put(buf.getIsbn(), buf);
+        }else {;}
+    }
 }
