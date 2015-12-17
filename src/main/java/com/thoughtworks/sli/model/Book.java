@@ -1,4 +1,4 @@
-package com.thoughtworks.jimmy.model;
+package com.thoughtworks.sli.model;
 
 public class Book {
     private String isbn;

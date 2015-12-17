@@ -1,7 +1,7 @@
-package com.thoughtworks.jimmy.service;
+package com.thoughtworks.sli.service;
 
-import com.thoughtworks.jimmy.model.Book;
-import com.thoughtworks.jimmy.repository.BookRepository;
+import com.thoughtworks.sli.model.Book;
+import com.thoughtworks.sli.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

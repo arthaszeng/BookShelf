@@ -1,7 +1,7 @@
-package com.thoughtworks.jimmy.controller;
+package com.thoughtworks.sli.controller;
 
-import com.thoughtworks.jimmy.model.Book;
-import com.thoughtworks.jimmy.service.BookService;
+import com.thoughtworks.sli.model.Book;
+import com.thoughtworks.sli.service.BookService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,6 @@
-package com.thoughtworks.jimmy.service;
+package com.thoughtworks.sli.service;
 
-import com.thoughtworks.jimmy.model.Book;
+import com.thoughtworks.sli.model.Book;
 
 public interface BookService {
     Iterable<Book> findAll();

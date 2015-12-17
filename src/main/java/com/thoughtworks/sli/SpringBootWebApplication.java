@@ -1,4 +1,4 @@
-package com.thoughtworks.jimmy;
+package com.thoughtworks.sli;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

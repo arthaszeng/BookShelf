@@ -1,6 +1,6 @@
-package com.thoughtworks.jimmy.repository;
+package com.thoughtworks.sli.repository;
 
-import com.thoughtworks.jimmy.model.Book;
+import com.thoughtworks.sli.model.Book;
 import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
